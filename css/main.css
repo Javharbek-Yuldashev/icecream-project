@@ -1,0 +1,454 @@
+@font-face {
+  font-family: "Fredoka One";
+  src: url(../font/Fredoka_One/FredokaOne-Regular.ttf); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: "Hind Madurai";
+  src: url(../font/Hind_Madurai/HindMadurai-Regular.ttf); }
+
+@font-face {
+  font-family: "Hind MaduraiB";
+  src: url(../font/Hind_Madurai/HindMadurai-Bold.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9; }
+
+button {
+  padding: 1.5rem 5rem;
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+  background-color: #d23166;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.5s; }
+  button:hover {
+    opacity: 1; }
+
+.container {
+  width: 112.5rem;
+  margin: 0 auto; }
+
+.head {
+  background-color: rgba(242, 206, 218, 0.3);
+  padding: 1rem 0 4rem; }
+  .head .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .head .nav-bar ul {
+      list-style: none;
+      display: flex; }
+      .head .nav-bar ul a {
+        text-decoration: none;
+        margin-right: 40px;
+        color: #150101;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        opacity: 0.6; }
+        .head .nav-bar ul a:hover {
+          font-weight: bold;
+          color: #d23166;
+          opacity: 1; }
+  .head .sticky {
+    position: fixed;
+    width: inherit;
+    margin: 0 auto;
+    background-color: #FBF0F4;
+    z-index: 10; }
+  .head .headContent {
+    display: flex;
+    justify-content: stretch;
+    align-items: center; }
+    .head .headContent .headText-entry {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.1em;
+      color: #0F0101; }
+    .head .headContent .headText-intro {
+      width: 125%;
+      font-family: "Fredoka One", sans-serif;
+      font-size: 5.7rem;
+      line-height: 6.9rem;
+      color: #0F0101;
+      opacity: 0.9; }
+      .head .headContent .headText-intro span {
+        color: #d23166; }
+    .head .headContent .headText-text {
+      font-family: "Hind Madurai";
+      font-size: 18px;
+      line-height: 27px;
+      color: #0F0101;
+      opacity: 0.6;
+      margin: 3.5rem 0 5rem; }
+    .head .headContent .headImage {
+      position: relative;
+      right: -10rem; }
+
+.deliveryServices {
+  padding: 11rem 0; }
+  .deliveryServices .deliveryBoxes {
+    display: flex;
+    justify-content: space-between; }
+    .deliveryServices .deliveryBoxes .deliveryBox {
+      width: 22%;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+      box-sizing: border-box;
+      border-radius: 0.7rem;
+      padding: 3.1rem 2.6rem 2.8rem;
+      cursor: pointer;
+      text-align: center; }
+      .deliveryServices .deliveryBoxes .deliveryBox:hover {
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03); }
+      .deliveryServices .deliveryBoxes .deliveryBox .deleverry-service {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: #000000;
+        margin: 2.5rem 0 1rem; }
+      .deliveryServices .deliveryBoxes .deliveryBox .deleverry-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        opacity: 0.6; }
+
+.details_section {
+  background-color: rgba(242, 206, 218, 0.3);
+  padding: 4.8rem 0 3.4rem; }
+  .details_section .details-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .details_section .details-content .detail-text-intro {
+      width: 50%;
+      font-family: "Hind Madurai";
+      font-weight: 600;
+      font-size: 4.42rem;
+      line-height: 4.9rem;
+      color: #150101; }
+    .details_section .details-content .detail-text {
+      font-family: "Hind Madurai";
+      font-size: 18px;
+      line-height: 27px;
+      color: #0F0101;
+      opacity: 0.6;
+      margin: 3.5rem 0 5rem; }
+
+.about-pruduct {
+  padding: 13rem 0 15rem; }
+  .about-pruduct .product-intro {
+    font-family: "Hind Madurai";
+    font-weight: 600;
+    font-size: 4.42rem;
+    line-height: 6rem;
+    color: #150101;
+    text-align: center; }
+  .about-pruduct ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 2rem; }
+    .about-pruduct ul a {
+      text-decoration: none;
+      margin-right: 40px;
+      color: #000;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      opacity: 0.6; }
+      .about-pruduct ul a:hover {
+        font-weight: bold;
+        border-bottom: 3px solid #d23166;
+        opacity: 1;
+        transition: all 0.2s; }
+  .about-pruduct .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem; }
+    .about-pruduct .row .row-text {
+      width: 40%; }
+      .about-pruduct .row .row-text .product-name {
+        font-family: "Hind Madurai";
+        font-weight: bold;
+        font-size: 2.6rem;
+        line-height: 3.6rem; }
+      .about-pruduct .row .row-text .product-info {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        opacity: 0.7;
+        margin: 1.1rem 0 2.8rem; }
+      .about-pruduct .row .row-text .product-price {
+        font-family: "Hind Madurai";
+        font-weight: bold;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+        margin-bottom: 1.5rem; }
+        .about-pruduct .row .row-text .product-price span {
+          font-weight: 500;
+          font-size: 2rem;
+          line-height: 2.8rem;
+          text-decoration-line: line-through;
+          opacity: 0.7; }
+      .about-pruduct .row .row-text .user-account {
+        display: flex;
+        align-items: center; }
+        .about-pruduct .row .row-text .user-account .user-info {
+          margin-left: 1rem; }
+          .about-pruduct .row .row-text .user-account .user-info .user-name {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-bottom: 0.5rem; }
+          .about-pruduct .row .row-text .user-account .user-info .user-military {
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            opacity: 0.7; }
+      .about-pruduct .row .row-text .user-testimonal {
+        display: flex;
+        align-items: baseline;
+        position: relative; }
+        .about-pruduct .row .row-text .user-testimonal .frontQuote {
+          margin-right: 1.2rem; }
+        .about-pruduct .row .row-text .user-testimonal .backQuote {
+          margin-left: 1.2rem;
+          position: absolute;
+          left: 9rem;
+          bottom: 3rem; }
+      .about-pruduct .row .row-text .user-accardion {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .about-pruduct .row .row-text .user-accardion .accardion-scroll {
+          cursor: pointer; }
+        .about-pruduct .row .row-text .user-accardion .active-testimonal {
+          border: 2px solid #d23166;
+          border-radius: 50%; }
+    .about-pruduct .row .row-img {
+      width: 50%; }
+    .about-pruduct .row .left-content {
+      text-align: right; }
+    .about-pruduct .row .row-testimonal {
+      width: 30%; }
+
+.ordering {
+  background-color: rgba(242, 206, 218, 0.3); }
+  .ordering .order-content {
+    display: flex; }
+    .ordering .order-content .order-img {
+      position: relative;
+      bottom: -4.5rem; }
+    .ordering .order-content .order-info {
+      margin-left: 13.5rem;
+      margin-top: 90px; }
+      .ordering .order-content .order-info .order-intro {
+        font-size: 4.42rem;
+        line-height: 5.2rem;
+        font-weight: 900; }
+      .ordering .order-content .order-info .order-text {
+        width: 85%;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.01rem;
+        margin: 2rem 0 3rem;
+        opacity: 0.7; }
+      .ordering .order-content .order-info .order-steps {
+        list-style: none; }
+        .ordering .order-content .order-info .order-steps li {
+          display: flex;
+          align-items: center;
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+          font-weight: bold;
+          margin-top: 1.5rem; }
+          .ordering .order-content .order-info .order-steps li span {
+            width: 30px;
+            height: 30px;
+            border-radius: 0.3rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem; }
+      .ordering .order-content .order-info .order-app {
+        display: flex;
+        margin-top: 4rem; }
+        .ordering .order-content .order-info .order-app img {
+          cursor: pointer; }
+
+.question-section {
+  width: 50%;
+  padding: 19rem 0 15rem;
+  margin: 0 auto; }
+  .question-section .question-intro {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .question-section .question-send {
+    display: flex;
+    justify-content: center; }
+    .question-section .question-send .question-input {
+      width: 60%;
+      padding: 0 3rem;
+      border: none;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      background-color: #FAFAFA; }
+
+footer {
+  background-color: #0A0808;
+  padding: 7rem 0 10.5rem; }
+  footer .footer-content {
+    display: flex; }
+    footer .footer-content .footer-left {
+      width: 20%; }
+      footer .footer-content .footer-left .footer-text {
+        width: 75%;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        color: #fff;
+        opacity: 0.7; }
+      footer .footer-content .footer-left .footer-social {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 2.5rem;
+        margin-bottom: 0.8rem; }
+      footer .footer-content .footer-left .footer-social-icons {
+        width: 40%;
+        display: flex;
+        justify-content: space-between; }
+    footer .footer-content .footer-right {
+      width: 80%;
+      display: flex;
+      margin-top: 7rem; }
+      footer .footer-content .footer-right ul {
+        list-style: none; }
+        footer .footer-content .footer-right ul li {
+          margin-bottom: 1rem; }
+          footer .footer-content .footer-right ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            opacity: 0.8; }
+            footer .footer-content .footer-right ul li a:hover {
+              opacity: 1; }
+      footer .footer-content .footer-right .footer-infos {
+        margin-left: 13rem; }
+      footer .footer-content .footer-right .newsletter {
+        margin-left: 15rem; }
+        footer .footer-content .footer-right .newsletter .newsletter-text {
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          font-weight: bold;
+          color: #fff; }
+        footer .footer-content .footer-right .newsletter .newsletter-subscribe {
+          margin: 1.3rem 0 1.8rem;
+          display: flex; }
+          footer .footer-content .footer-right .newsletter .newsletter-subscribe .subscribe-input {
+            color: #fff;
+            padding: 0 3rem;
+            background: transparent;
+            border: 2px solid #D64374;
+            border-right: none;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            opacity: 0.7; }
+          footer .footer-content .footer-right .newsletter .newsletter-subscribe button {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0; }
+      footer .footer-content .footer-right .payments img {
+        margin-right: 1.5rem; }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 7rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s; }
+  .modal .modal__header {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+    font-family: "Fredoka One", sans-serif; }
+    .modal .modal__header span {
+      color: #d23166; }
+  .modal .modal__form {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 2.5rem; }
+    .modal .modal__form label {
+      font-size: 1.8rem;
+      font-weight: 500; }
+    .modal .modal__form select {
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      color: #d23166;
+      border-radius: 0.5rem; }
+    .modal .modal__form p {
+      font-family: "Hind Madurai";
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 3.6rem; }
+    .modal .modal__form button {
+      grid-column: 1 / span 2;
+      justify-self: center;
+      margin-top: 1rem; }
+  .modal .btn--cloce-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.5rem;
+    font-size: 5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0; }
